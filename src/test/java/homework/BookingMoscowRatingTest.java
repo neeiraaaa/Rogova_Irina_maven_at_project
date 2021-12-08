@@ -21,7 +21,7 @@ public class BookingMoscowRatingTest {
             driver.findElement(By.xpath("//span[@class='sb-date-field__icon sb-date-field__icon-btn bk-svg-wrapper calendar-restructure-sb']")).click();
             driver.findElement(By.xpath("//span[@aria-label='7 Декабрь 2021']")).click();
             driver.findElement(By.xpath("//span[@aria-label='14 Декабрь 2021']")).click();
-            driver.findElement(By.xpath("//button[@data-sb-id='main']")).click(); // click on search
+            driver.findElement(By.xpath("//button[@data-sb-id='main']")).click();
             driver.findElement(By.xpath("//a[@data-type='dropdown']")).click();
             driver.findElement(By.xpath("//ul[@role='menu' ]//a[@data-type='review_score_and_price']")).click();
 
