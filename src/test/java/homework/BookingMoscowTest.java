@@ -1,6 +1,8 @@
 package homework;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,6 +13,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingMoscowTest {
+
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
 
     WebDriver driver = new ChromeDriver();
 
@@ -43,8 +56,5 @@ public class BookingMoscowTest {
 
         String rgbRed = "rgba(255, 0, 0, 1)";
         Assert.assertEquals(" ", colorTitle, rgbRed);
-
-        driver.close();
-        driver.quit();
     }
 }

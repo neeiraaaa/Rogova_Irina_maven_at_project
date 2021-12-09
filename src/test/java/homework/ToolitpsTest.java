@@ -1,6 +1,8 @@
 package homework;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,14 +10,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import javax.swing.*;
-
 public class ToolitpsTest {
+
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
 
     WebDriver driver = new ChromeDriver();
 
     @Test
-    public void bookingTollipsTest () {
+    public void bookingTolipsTest () {
         driver.manage().window().maximize();
         driver.get("https://booking.com");
 

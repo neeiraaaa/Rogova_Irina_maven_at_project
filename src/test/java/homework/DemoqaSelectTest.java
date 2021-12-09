@@ -1,5 +1,7 @@
 package homework;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +11,19 @@ import org.openqa.selenium.support.ui.Select;
 
 public class DemoqaSelectTest {
 
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
+
     WebDriver driver = new ChromeDriver();
+
     @Test
     public void selectTest() {
 
@@ -31,7 +45,4 @@ public class DemoqaSelectTest {
         Select select1 = new Select(element1);
         select1.selectByValue("opel");
     }
-
-
-
 }

@@ -1,6 +1,8 @@
 package homework;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingHotelTest {
 
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
+
     WebDriver driver = new ChromeDriver();
 
     @Test
@@ -20,9 +33,9 @@ public class BookingHotelTest {
         driver.get("https://booking.com");
         driver.findElement(By.name("ss")).sendKeys("Париж");
         WebElement element = new WebDriverWait(driver, 1000).until(
-                ExpectedConditions.elementToBeClickable(By.xpath("//li[@data-label='Париж, Иль-де-Франс, Франция']"))
-        );
+                ExpectedConditions.elementToBeClickable(By.xpath("//li[@data-label='Париж, Иль-де-Франс, Франция']")));
         element.click();
+
         driver.findElement(By.xpath("//td[@data-date='2021-12-09']")).click(); //7 ночей
         driver.findElement(By.xpath("//td[@data-date='2021-12-16']")).click();
         driver.findElement(By.xpath("//span[@data-adults-count]")).click();
@@ -49,8 +62,5 @@ public class BookingHotelTest {
         System.out.println("Actual price: " + actualMaxPrice / 7);
 
         Assert.assertTrue(" Expected hotel price is lower than expected!", actualMaxPrice / 7 >= expectedMaxPrice);
-
-        driver.close();
-        driver.quit();
     }
 }

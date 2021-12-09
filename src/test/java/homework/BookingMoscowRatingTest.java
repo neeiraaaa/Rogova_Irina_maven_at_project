@@ -1,6 +1,8 @@
 package homework;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +12,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingMoscowRatingTest {
+
+        @Before
+        public void before() {
+            System.out.println("Start");
+        }
+
+        @After
+        public void after() {
+           driver.close();
+           driver.quit();
+        }
 
         WebDriver driver = new ChromeDriver();
 
@@ -32,5 +45,5 @@ public class BookingMoscowRatingTest {
             int maxPriceNumberRating = Integer.parseInt(maxPriceTextRating.replaceAll("\\D+", ""));
 
             Assert.assertTrue("The highest hotel rating is incorrect ", maxPriceNumberRating >= 9);
-        }
+   }
 }

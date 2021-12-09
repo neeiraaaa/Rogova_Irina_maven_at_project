@@ -1,5 +1,7 @@
 package homework;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +11,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingMoscow {
+
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
 
     WebDriver driver = new ChromeDriver();
 
@@ -31,7 +44,5 @@ public class BookingMoscow {
 
         driver.findElement(By.xpath("//div[@class='sb-searchbox-submit-col -submit-button ']")).click();
        System.out.println("Есть ли отели на выбранные даты: " + driver.findElement(By.xpath("//div[@class='ea52000380']")).isDisplayed());
-        driver.close();
-        driver.quit();
     }
 }

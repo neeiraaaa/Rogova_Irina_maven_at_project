@@ -1,6 +1,8 @@
 package homework;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -11,10 +13,21 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TutorialTest {
 
+    @Before
+    public void before() {
+        System.out.println("Start");
+    }
+
+    @After
+    public void after() {
+        driver.close();
+        driver.quit();
+    }
+
     WebDriver driver = new ChromeDriver();
 
     @Test
-    public void tutorial(){
+    public void tutorial() {
 
         driver.manage().window().maximize();
         driver.get("https://www.w3schools.com/java/");
@@ -49,8 +62,5 @@ public class TutorialTest {
         System.out.println("Actual words contains tutorial: " + containsTutorial);
 
         Assert.assertEquals(" ", sizeBlocs, containsTutorial);
-
-        driver.close();
-        driver.quit();
     }
 }
