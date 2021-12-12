@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class DemoqaSelectTest {
 
+    WebDriver driver = new ChromeDriver();
+
     @Before
     public void before() {
         System.out.println("Start");
@@ -21,8 +23,6 @@ public class DemoqaSelectTest {
         driver.close();
         driver.quit();
     }
-
-    WebDriver driver = new ChromeDriver();
 
     @Test
     public void selectTest() {

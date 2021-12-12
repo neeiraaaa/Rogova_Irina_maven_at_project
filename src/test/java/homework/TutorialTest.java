@@ -13,6 +13,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TutorialTest {
 
+    WebDriver driver = new ChromeDriver();
+
     @Before
     public void before() {
         System.out.println("Start");
@@ -23,8 +25,6 @@ public class TutorialTest {
         driver.close();
         driver.quit();
     }
-
-    WebDriver driver = new ChromeDriver();
 
     @Test
     public void tutorial() {

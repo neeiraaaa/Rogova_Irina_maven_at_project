@@ -12,6 +12,8 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ToolitpsTest {
 
+    WebDriver driver = new ChromeDriver();
+
     @Before
     public void before() {
         System.out.println("Start");
@@ -22,8 +24,6 @@ public class ToolitpsTest {
         driver.close();
         driver.quit();
     }
-
-    WebDriver driver = new ChromeDriver();
 
     @Test
     public void bookingTolipsTest () {

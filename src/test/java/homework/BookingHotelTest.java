@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingHotelTest {
 
+    WebDriver driver = new ChromeDriver();
+
     @Before
     public void before() {
         System.out.println("Start");
@@ -23,8 +25,6 @@ public class BookingHotelTest {
         driver.close();
         driver.quit();
     }
-
-    WebDriver driver = new ChromeDriver();
 
     @Test
     public void bookingParisTest() throws InterruptedException {

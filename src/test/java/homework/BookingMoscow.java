@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingMoscow {
 
+    WebDriver driver = new ChromeDriver();
+
     @Before
     public void before() {
         System.out.println("Start");
@@ -22,8 +24,6 @@ public class BookingMoscow {
         driver.close();
         driver.quit();
     }
-
-    WebDriver driver = new ChromeDriver();
 
     @Test
     public void bookingMoscowTest() {
