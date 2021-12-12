@@ -36,8 +36,8 @@ public class BookingHotelTest {
                 ExpectedConditions.elementToBeClickable(By.xpath("//li[@data-label='Париж, Иль-де-Франс, Франция']")));
         element.click();
 
-        driver.findElement(By.xpath("//td[@data-date='2021-12-09']")).click(); //7 ночей
-        driver.findElement(By.xpath("//td[@data-date='2021-12-16']")).click();
+        driver.findElement(By.xpath("//td[@data-date='2021-12-12']")).click(); //7 ночей
+        driver.findElement(By.xpath("//td[@data-date='2021-12-20']")).click();
         driver.findElement(By.xpath("//span[@data-adults-count]")).click();
         driver.findElement(By.xpath("//button[@aria-label='Взрослых: увеличить количество']")).click();
         driver.findElement(By.xpath("//button[@aria-label='Взрослых: увеличить количество']")).click();
