@@ -1,4 +1,4 @@
-package demo.steps.classwork18;
+package demo.classwork18;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
