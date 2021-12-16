@@ -1,4 +1,4 @@
-package homework;
+package demo.steps.homework17;
 
 import org.junit.After;
 import org.junit.Before;

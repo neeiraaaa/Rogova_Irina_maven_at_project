@@ -1,4 +1,4 @@
-package homework;
+package demo.steps.homework17;
 
 import org.junit.After;
 import org.junit.Assert;
@@ -13,11 +13,11 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TutorialTest {
 
-    WebDriver driver = new ChromeDriver();
+    WebDriver driver;
 
     @Before
     public void before() {
-        System.out.println("Start");
+        driver = new ChromeDriver();
     }
 
     @After
