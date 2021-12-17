@@ -8,12 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty", "summary"},
         glue = {"classwork18"},
-        features = {"src/test/resources/features/my.feature"},
+        features = {"src/test/resources/features/My.feature"},
         strict = true,
         tags = {"@QA"}
-
 )
-
 public class CukeRunner {
 
 }
