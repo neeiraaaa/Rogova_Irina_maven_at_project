@@ -2,7 +2,7 @@
 <suite name="My test suite">
     <test name="testing">
         <classes>
-            <class name="com.src/test/java/pages/BookingRegistrationPage.java" />
+            <class name="pages/BookingRegistrationPage.java" />
         </classes>
     </test>
 </suite>

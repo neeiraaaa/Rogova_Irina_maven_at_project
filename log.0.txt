@@ -1,0 +1,10 @@
+дек. 18, 2021 2:35:10 pm demo.classwork19.logi.DefaultLogging main SEVERE: Сообщение с уровнем SERVER
+дек. 18, 2021 2:35:10 pm demo.classwork19.logi.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+дек. 18, 2021 2:35:10 pm demo.classwork19.logi.DefaultLogging main INFO: Сообщение с уровнем INFO
+дек. 18, 2021 2:35:10 pm demo.classwork19.logi.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+дек. 18, 2021 2:35:10 pm demo.classwork19.logi.DefaultLogging main FINE: Сообщение с уровнем FINE
+дек. 18, 2021 2:37:12 pm demo.classwork19.logi.DefaultLogging main SEVERE: Сообщение с уровнем SERVER
+дек. 18, 2021 2:37:12 pm demo.classwork19.logi.DefaultLogging main WARNING: Сообщение с уровнем WARNING
+дек. 18, 2021 2:37:12 pm demo.classwork19.logi.DefaultLogging main INFO: Сообщение с уровнем INFO
+дек. 18, 2021 2:37:12 pm demo.classwork19.logi.DefaultLogging main CONFIG: Сообщение с уровнем CONFIG
+дек. 18, 2021 2:37:12 pm demo.classwork19.logi.DefaultLogging main FINE: Сообщение с уровнем FINE
