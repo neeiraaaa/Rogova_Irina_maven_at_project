@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import pages.BookingRegistrationPage;
+import pages.booking.BookingRegistrationPage;
 
 public class RegistrationOnBooking {
 
