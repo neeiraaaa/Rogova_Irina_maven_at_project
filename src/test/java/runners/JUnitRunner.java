@@ -2,7 +2,7 @@ package runners;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import pages.BookingRegistrationPage;
+import pages.booking.BookingRegistrationPage;
 import steps.RegistrationOnBooking;
 
 @Suite.SuiteClasses({BookingRegistrationPage.class, RegistrationOnBooking.class}) //что-то еще добавить нужно???
